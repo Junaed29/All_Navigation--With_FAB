@@ -1,4 +1,4 @@
-package com.example.navigation;
+package com.example.navigation.bottomNavigation;
 
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -7,6 +7,12 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
+import com.example.navigation.fragments.Account_Fragment;
+import com.example.navigation.fragments.Contacts_Fragment;
+import com.example.navigation.fragments.Profile_Fragment_with_fab;
+import com.example.navigation.R;
+import com.example.navigation.fragments.Settings_Fragment;
+import com.example.navigation.fragments.Shopping_Fragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity  {
@@ -24,7 +30,7 @@ public class MainActivity extends AppCompatActivity  {
         bottomNavigationView.setOnNavigationItemSelectedListener(selectedListener);
 
         if (savedInstanceState == null){
-            fragment = new Profile_Fragment();
+            fragment = new Profile_Fragment_with_fab();
             getSupportFragmentManager().beginTransaction()
                     .replace(R.id.fragment_ContainerId,fragment)
                     .commit();
@@ -48,7 +54,7 @@ public class MainActivity extends AppCompatActivity  {
                             .commit();
                     break;
                 case R.id.nev_btm_home :
-                    fragment = new Profile_Fragment();
+                    fragment = new Profile_Fragment_with_fab();
                     getSupportFragmentManager().beginTransaction()
                             .replace(R.id.fragment_ContainerId,fragment)
                             .commit();

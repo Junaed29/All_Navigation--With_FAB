@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nev_drawer_home"
+            android:icon="@drawable/nev_bottom_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nev_drawer_account"
+            android:icon="@drawable/nev_bottom_account"
+            android:title="Account" />
+
+        <item
+            android:id="@+id/nev_drawer_contacts"
+            android:icon="@drawable/nev_bottom_contacts"
+            android:title="Contacts" />
+        <item
+            android:id="@+id/nev_drawer_settings"
+            android:icon="@drawable/nev_bottom_settings"
+            android:title="Settings" />
+
+        <item
+            android:id="@+id/nev_drawer_shopping"
+            android:icon="@drawable/nev_bottom_shopping"
+            android:title="Shopping Cart" />
+
+    </group>
+
+    <item android:title="Communication">
+        <menu>
+            <item
+                android:id="@+id/nev_drawer_share"
+                android:icon="@drawable/share_black_24dp"
+                android:title="Share" />
+            <item
+                android:id="@+id/nev_drawer_help"
+                android:icon="@drawable/help_black_24dp"
+                android:title="Help" />
+        </menu>
+    </item>
+</menu>

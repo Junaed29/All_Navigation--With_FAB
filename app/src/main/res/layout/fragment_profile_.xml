@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/profile_fragment_rltiveId"
-    tools:context=".Profile_Fragment">
+    tools:context=".fragments.Profile_Fragment_with_fab">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView

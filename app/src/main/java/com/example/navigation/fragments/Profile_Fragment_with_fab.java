@@ -1,4 +1,4 @@
-package com.example.navigation;
+package com.example.navigation.fragments;
 
 
 import android.content.Context;
@@ -15,13 +15,14 @@ import android.view.animation.OvershootInterpolator;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
+import com.example.navigation.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class Profile_Fragment extends Fragment implements View.OnClickListener {
+public class Profile_Fragment_with_fab extends Fragment implements View.OnClickListener {
     private Context context;
 
     private FloatingActionButton fabOne,fabTwo,fabThree,fabMain;
@@ -32,7 +33,7 @@ public class Profile_Fragment extends Fragment implements View.OnClickListener {
 
     private boolean isMenuOpen = false;
 
-    public Profile_Fragment() {
+    public Profile_Fragment_with_fab() {
         // Required empty public constructor
     }
 
@@ -45,7 +46,7 @@ public class Profile_Fragment extends Fragment implements View.OnClickListener {
         View view = inflater.inflate(R.layout.fragment_profile_, container, false);
 
         RelativeLayout relativeLayout = view.findViewById(R.id.profile_fragment_rltiveId);
-        relativeLayout.setBackgroundColor(Color.RED);
+        relativeLayout.setBackgroundColor(Color.MAGENTA);
         initFabMenu(view);
 
         return view;
