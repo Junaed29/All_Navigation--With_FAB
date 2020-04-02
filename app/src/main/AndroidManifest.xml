@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".drawerNavigation.Main2Activity" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".tabLayoutViewPager.TabLayoutActivity" android:theme="@style/NoActionBar.Material"></activity>
+        <activity
+            android:name=".drawerNavigation.Main2Activity"
+            android:theme="@style/NoActionBar.StatusBarTransparent" />
         <activity android:name=".LauncherActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

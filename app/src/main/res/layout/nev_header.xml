@@ -36,6 +36,6 @@
         android:text="jpsoft.com"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="18sp"
-        app:fontFamily="@font/alegreya_sans_italic" />
+        app:fontFamily="@font/aldrich"/>
 
 </LinearLayout>

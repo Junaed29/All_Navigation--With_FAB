@@ -23,7 +23,6 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
  * A simple {@link Fragment} subclass.
  */
 public class Profile_Fragment_with_fab extends Fragment implements View.OnClickListener {
-    private Context context;
 
     private FloatingActionButton fabOne,fabTwo,fabThree,fabMain;
 
@@ -42,7 +41,6 @@ public class Profile_Fragment_with_fab extends Fragment implements View.OnClickL
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        context = container.getContext();
         View view = inflater.inflate(R.layout.fragment_profile_, container, false);
 
         RelativeLayout relativeLayout = view.findViewById(R.id.profile_fragment_rltiveId);
@@ -98,7 +96,7 @@ public class Profile_Fragment_with_fab extends Fragment implements View.OnClickL
 
     @Override
     public void onClick(View v) {
-        Toast.makeText(context, "Click", Toast.LENGTH_SHORT).show();
+        Toast.makeText(v.getContext(), "Click", Toast.LENGTH_SHORT).show();
         switch (v.getId()){
             case R.id.fab_main:
                 if (isMenuOpen){
